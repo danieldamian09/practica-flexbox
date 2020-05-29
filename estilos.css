@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.padre{
+    background: #7216af;
+    width: 80%;
+    /* para trabajar con el eje principal(horizontal) siempre debe ir un width */
+    height: 600px;
+    /* para trabajar con el eje secundario(vertica) siempre debe ir un height */
+    margin: 20px auto;
+
+
+    display: flex;
+    /* coloca los hijos uno al lado del otro sobre el eje principal */
+
+
+    flex-direction: row;
+    /* flex-direction incia hacia que direccion sobre el eje principal */
+    flex-direction: row-reverse;
+    /* las mueve hacia la derecha sobre el eje principal e invierte el orden */
+    flex-direction: column;
+    /* las coloca sobre el eje secundario en columna */
+    flex-direction: column-reverse;
+    /* las coloca sobre el eje secundario e invierte el orden */
+
+
+    flex-wrap: nowrap;
+    /* hace que los hijos no deslicen hacia abajo es la determinada */
+    flex-wrap: wrap;
+    /* permite que se me agregen los elementos abajo sin que pierdan su tamaño */
+
+
+}
+
+.hijo{
+    background: coral;
+    width: 100px;
+    height: 100px;
+    /* si los hijos no tienen un height toman el de el padre */
+    margin: 10px;
+}
